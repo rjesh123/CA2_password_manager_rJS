@@ -58,7 +58,7 @@ class PasswordManger extends Component {
     const searchValue = event.target.value
 
     const updatedPasswordsList = passwordsList.filter(eachPassword =>
-      eachPassword.website.toLowercase().includes(searchValue),
+      eachPassword.website.toLowerCase().includes(searchValue),
     )
 
     this.setState({
@@ -172,7 +172,7 @@ class PasswordManger extends Component {
                 onChange={this.onChangePasswordInput}
               />
             </div>
-            <button type="submit" className="add-btn" data-testid="delete">
+            <button type="submit" className="add-btn">
               Add
             </button>
           </form>
